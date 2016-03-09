@@ -1,0 +1,98 @@
+1. Author info:
+Yu Liu
+liuyuxisu@csu.fullerton.edu
+
+
+2. Project info:
+TweeterStream.py          get twitter stream (samples not status) at 11:29 AM - 11:34 AM on 2/28/2016 (Sunday) @ Fullerton, CA
+>>output.txt              twitter streams
+
+>>one.txt                 one twitter content in json form
+
+grep hashtags output.txt  get twitters contain 'hashtags'
+>>hashtags.txt
+
+Parse_n_Filter            get and convert hashtags and texts as strings, store in Harray.txt (for hashtags) and Tarray.txt (for corresponding texts). Note: Harray and Tarray are matching
+
+SentimentalAnalysis       get top 10 popular hashtags and find corresponding texts and score them. Find the average score for each top 10 hashtag
+
+AFINN-111 (downloaded online)
+
+sentimentAnalysis.py      get scores for each twitter text
+>>score.txt
+
+
+
+3. What is in One Piece
+
+{'contributors': None,
+ 'coordinates': None,
+ 'created_at': 'Sat Feb 27 19:04:28 +0000 2016',
+ 'entities': {'hashtags': [],
+              'symbols': [],
+              'urls': [{'display_url': 'instagram.com/p/BCTP_-nn1z_s\u2026',
+                          'expanded_url': 'https://www.instagram.com/p/BCTP_-nn1z_s_p7XIfxWIBnLu0KFwgH7peFQLE0/',
+                          'indices': [68, 91],
+                          'url': 'https://t.co/knEwi3Om81'}],
+               'user_mentions': []},
+ 'favorite_count': 0,
+ 'favorited': False,
+ 'filter_level': 'low',
+ 'geo': None,
+ 'id': 703656964295782400,
+ 'id_str': '703656964295782400',
+ 'in_reply_to_screen_name': None,
+ 'in_reply_to_status_id': None,
+ 'in_reply_to_status_id_str': None,
+ 'in_reply_to_user_id': None,
+ 'in_reply_to_user_id_str': None,
+ 'is_quote_status': False,
+ 'lang': 'en',
+ 'place': None,
+ 'possibly_sensitive': False,
+ 'retweet_count': 0,
+ 'retweeted': False,
+ 'source': '<a href="http://instagram.com" rel="nofollow">Instagram</a>',
+ 'text': 'Only my car is left at the huge parking lot. Tekken till 3AM. \U0001f602 \U0001f602 \U0001f602 https://t.co/knEwi3Om81',
+ 'timestamp_ms': '1456599868259',
+ 'truncated': False,
+ 'user': {'contributors_enabled': False,
+           'created_at': 'Fri Feb 27 02:46:32 +0000 2009',
+           'default_profile': False,
+           'default_profile_image': False,
+           'description': 'I play Abel in SF4. Now trying out Laura. Show Me Your Abelity. \u65e5\u672c\u8a9e\u3067\u3082\uff2f\uff2b\u3002',
+           'favourites_count': 641,
+           'follow_request_sent': None,
+           'followers_count': 325,
+           'following': None,
+           'friends_count': 308,
+           'geo_enabled': False,
+           'id': 22098366,
+           'id_str': '22098366',
+           'is_translator': False,
+           'lang': 'en',
+           'listed_count': 17,
+           'location': 'Malaysia',
+           'name': '\u30a2\u30d9\u30ea\u30c6\u30a3',
+           'notifications': None,
+           'profile_background_color': '131516',
+           'profile_background_image_url': 'http://abs.twimg.com/images/themes/theme14/bg.gif',
+           'profile_background_image_url_https': 'https://abs.twimg.com/images/themes/theme14/bg.gif',
+           'profile_background_tile': True,
+           'profile_banner_url': 'https://pbs.twimg.com/profile_banners/22098366/1420262834',
+           'profile_image_url': 'http://pbs.twimg.com/profile_images/644904974267236353/fcpXSlhx_normal.jpg',
+           'profile_image_url_https': 'https://pbs.twimg.com/profile_images/644904974267236353/fcpXSlhx_normal.jpg',
+           'profile_link_color': '1C8A48',
+           'profile_sidebar_border_color': 'EEEEEE',
+           'profile_sidebar_fill_color': 'EFEFEF',
+           'profile_text_color': '333333',
+           'profile_use_background_image': True,
+           'protected': False,
+           'screen_name': 'abelity_',
+           'statuses_count': 21646,
+           'time_zone': 'Kuala Lumpur',
+           'url': 'http://www.youtube.com/user/illevate/',
+           'utc_offset': 28800,
+           'verified': False}}
+
+
