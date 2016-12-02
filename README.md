@@ -1,8 +1,17 @@
 Twitter Sentiment Analysis Report
 =====================
 Get twitter stream (samples not status) at 11:29 AM - 11:34 AM on 2/28/2016
-----------------
+~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. code-block:: python
+from tweepy import Stream
+from tweepy import OAuthHandler
+from tweepy.streaming import StreamListener
+#consumer key, consumer secret, access token, access secret.
+ckey="aaa"
+csecret="bbb"
+atoken="ccc"
+asecret="ddd"
 class listener(StreamListener):
  
     def on_data(self, data):
