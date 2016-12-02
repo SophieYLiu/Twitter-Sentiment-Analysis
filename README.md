@@ -1,7 +1,7 @@
 Twitter Sentiment Analysis Report
 =====================
 Get twitter stream (samples not status) at 11:29 AM - 11:34 AM on 2/28/2016
-~~~~~~~~~~~~~~~~~~~~~~~~
+----------------
 .. code-block:: python
 from tweepy import Stream
 from tweepy import OAuthHandler
