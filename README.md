@@ -1,4 +1,4 @@
-Twitter Sentiment Analysis Report
+Twitter Sentiment Analysis
 =====================
 
 Programming environment
