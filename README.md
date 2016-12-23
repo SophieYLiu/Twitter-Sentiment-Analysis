@@ -1,7 +1,15 @@
 Twitter Sentiment Analysis Report
 =====================
-Get twitter stream (samples not status) at 11:29 AM - 11:34 AM on 2/28/2016
+
+Programming environment
 ----------------
+- Operating System: Linux ubuntu 14/04
+- Libraries: tweepy - get twitter stream samples
+- Tools: collections
+
+Get twitter stream (samples not status) at 11:29 AM - 11:34 AM on 2/28
+----------------
+
 ```
 from tweepy import Stream
 from tweepy import OAuthHandler
@@ -25,13 +33,6 @@ auth.set_access_token(atoken, asecret)
 twitterStream = Stream(auth, listener())
 twitterStream.sample()
 ```
-
-Programming environment
-----------------
-- Operating System: Linux ubuntu 14/04
-- Libraries: tweepy - get twitter stream samples
-- Tools: collections
-
 Q & A 
 ----------------
 
